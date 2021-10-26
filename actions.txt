@@ -66,14 +66,107 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 Роман@User-PC MINGW64 /d/моё/test (master)
+$ git add .
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git commit -m "add /F1/C.txt"
+[master 7018634] add /F1/C.txt
+ 2 files changed, 167 insertions(+)
+ create mode 100644 F1/C.txt
+ create mode 100644 actions.txt
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 823 bytes | 823.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/prokopenkoroman88/test.git
+   04d1970..7018634  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$
+
+20:14
+
+
+F1/C.txt
+ chng text
 
 
 
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ cd F1
+
+Роман@User-PC MINGW64 /d/моё/test/F1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   C.txt
+        modified:   ../actions.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Роман@User-PC MINGW64 /d/моё/test/F1 (master)
+$ git add .
+
+Роман@User-PC MINGW64 /d/моё/test/F1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   C.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../actions.txt
 
 
+Роман@User-PC MINGW64 /d/моё/test/F1 (master)
+$ git commit -m "chng /F1/C.txt commit from /F1"
+[master 995688e] chng /F1/C.txt commit from /F1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Роман@User-PC MINGW64 /d/моё/test/F1 (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 400 bytes | 400.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prokopenkoroman88/test.git
+   7018634..995688e  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Роман@User-PC MINGW64 /d/моё/test/F1 (master)
+$
+
+// Внутри F1 команда "git add ." добавила только файлы из этой папки
 
 
+prokopenkoroman88 chng /F1/C.txt commit from /F1 995688e
+F1		chng /F1/C.txt commit from /F1	3 minutes ago
+A.txt		test repository			21 days ago
+B.txt		test repository 2		21 days ago
+actions.txt	add /F1/C.txt			8 minutes ago
 
+
+20:22
+
++/F2
+remove C.txt  from /F1 to /F2
 
 
 

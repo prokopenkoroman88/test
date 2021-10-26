@@ -273,8 +273,63 @@ must be:
 /F2/C.txt
 
 
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    F2/D.txt
+        modified:   actions.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        F1/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git add .
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    F2/D.txt -> F1/D.txt
+        modified:   actions.txt
 
 
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git commit -m "Replace D.txt from /F2 to /F1"
+[master 7285d6d] Replace D.txt from /F2 to /F1
+ 2 files changed, 35 insertions(+)
+ rename {F2 => F1}/D.txt (100%)
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git push -u origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 724 bytes | 724.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prokopenkoroman88/test.git
+   e871ea3..7285d6d  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$
+
+20:38
+
++/F1/F3
+B.txt to /F1/F3/B.txt
 
 
 

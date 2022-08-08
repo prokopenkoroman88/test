@@ -395,27 +395,123 @@ $
 
 
 
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    F1/F3/B.txt
+        modified:   actions.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        F1/F3/second letter of alphabet.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git add .
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    F1/F3/B.txt -> F1/F3/second letter of alphabet.txt
+        modified:   actions.txt
+
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git commit -m "Rename B.txt to 'second letter of alphabet.txt'"
+[master 41468b7] Rename B.txt to 'second letter of alphabet.txt'
+ 2 files changed, 60 insertions(+)
+ rename F1/F3/{B.txt => second letter of alphabet.txt} (100%)
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 779 bytes | 779.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prokopenkoroman88/test.git
+   42af470..41468b7  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Роман@User-PC MINGW64 /d/моё/test (master)
+$
+
+
+
+/F1
+	/F3
+		second letter of alphabet.txt
+	D.txt
+/F2
+	C.txt
+A.txt
+actions.txt
 
 
 
 
 
 
+====================================================================================================
+31.10.21
+
+
+https://coderoad.ru/5061517/%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D0%B8-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F-git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B9-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9
+
+https://github.com/prokopenkoroman88/test/commits/master/F1/F3
+
+History for test/F1/F3
+	Commits on Oct 26, 2021
+
+		Rename B.txt to 'second letter of alphabet.txt'		41468b7
+			prokopenkoroman88 committed 5 days ago
+ 
+		Replace B.txt from / to /F1/F3				42af470
+			prokopenkoroman88 committed 5 days ago
 
 
 
+-------------------------------------------------------------------------
+8.8.22
 
 
 
++D:\МОЁ\test\img
+
++img1.bmp
++img2.bmp
+
+branch "imgs"
+
+
+POST git-receive-pack (1060 bytes)
+remote: 
+remote: Create a pull request for 'imgs' on GitHub by visiting:        
+remote:      https://github.com/prokopenkoroman88/test/pull/new/imgs        
+remote: 
+Pushing to https://github.com/prokopenkoroman88/test.git
+To https://github.com/prokopenkoroman88/test.git
+ * [new branch]      imgs -> imgs
+updating local tracking ref 'refs/remotes/origin/imgs'
 
 
 
+Open a pull request
+Create a new pull request by comparing changes across two branches. If you need to, you can also .
 
-
-
-
-
-
+ Able to merge. These branches can be automatically merged.
 
 
 

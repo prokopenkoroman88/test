@@ -515,7 +515,47 @@ Create a new pull request by comparing changes across two branches. If you need 
 
 
 
+20:40
 
+
+
+
+
+Роман@User-PC MINGW64 /d/МОЁ/test (imgs)
+$ git status
+On branch imgs
+nothing to commit, working tree clean
+
+Роман@User-PC MINGW64 /d/МОЁ/test (imgs)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Роман@User-PC MINGW64 /d/МОЁ/test (master)
+$ git merge imgs
+Updating 41468b7..5a4c93f
+Fast-forward
+ actions.txt  |  96 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ img/img1.bmp | Bin 0 -> 3126 bytes
+ img/img2.bmp | Bin 0 -> 3126 bytes
+ 3 files changed, 96 insertions(+)
+ create mode 100644 img/img1.bmp
+ create mode 100644 img/img2.bmp
+
+Роман@User-PC MINGW64 /d/МОЁ/test (master)
+$
+
+
+
+push in GUI:
+
+POST git-receive-pack (223 bytes)
+Pushing to https://github.com/prokopenkoroman88/test.git
+To https://github.com/prokopenkoroman88/test.git
+   41468b7..5a4c93f  master -> master
+updating local tracking ref 'refs/remotes/origin/master'
 
 
 
